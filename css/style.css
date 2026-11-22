@@ -233,71 +233,15 @@ nav {
     line-height: 28px;
 }
 
-#skills {
+#technologies {
     padding: 70px 10%;
     text-align: center;
 }
 
-.skill {
-    margin: 20px 0;
-}
-
-.skill p {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.progress {
-    width: 100%;
-    height: 15px;
-    background: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.progress-bar {
-    height: 100%;
-    border-radius: 20px;
-    animation: loadBar 2s ease;
-    transition: width 1.5s ease;
-    width: 0% !important;
-}
-
-.html {
-    width: 95% !important;
-    background: #e34c26;
-}
-
-.css {
-    width: 90% !important;
-    background: #264de4;
-}
-
-.js {
-    width: 75% !important;
-    background: #f7df1e;
-}
-
-.python {
-    width: 70% !important;
-    background: #3776ab;
-}
-
-.cpp {
-    width: 80% !important;
-    background: #00599c;
-}
-
-.tech-stack {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.tech-stack h3 {
-    font-size: 28px;
-    color: #2563eb;
+.section-intro {
+    color: #475569;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .tech-container {
@@ -427,15 +371,6 @@ nav {
     color: #0f172a;
     margin: 15px 0;
     font-size: 24px;
-}
-
-.project-card ul {
-    padding-left: 20px;
-    margin-top: 15px;
-}
-
-.project-card li {
-    margin-bottom: 8px;
 }
 
 .tech-badges {
@@ -736,7 +671,7 @@ footer {
 
 #stats {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 60px 10%;
     text-align: center;
@@ -833,13 +768,11 @@ footer {
     color: white;
 }
 
-.dark-mode .skill-card,
 .dark-mode .project-card,
 .dark-mode #about,
 .dark-mode #contact,
 .dark-mode .stat-card,
 .dark-mode .experience-card,
-.dark-mode .timeline-item,
 .dark-mode .modal-content,
 .dark-mode .certificate-card,
 .dark-mode .info-card,
@@ -894,10 +827,6 @@ footer {
 .dark-mode .status-badge {
     background: #1f3a2b;
     color: #b6f2c1;
-}
-
-.dark-mode .progress {
-    background: #334155;
 }
 
 .dark-mode ::-webkit-scrollbar-track {
@@ -986,9 +915,13 @@ nav a.active::after {
     }
 }
 
-@keyframes loadBar {
+@keyframes spin {
     from {
-        width: 0;
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -1059,12 +992,5 @@ nav a.active::after {
     .hero-image img {
         width: 220px;
         height: 220px;
-    }
-
-    .skill-card,
-    .project-card,
-    #contact {
-        width: 90%;
-        margin: auto;
     }
 }
