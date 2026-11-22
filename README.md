@@ -1,7 +1,7 @@
 # Priyanshu Gangwar - Personal Portfolio Website
 
-A modern, responsive, and interactive personal portfolio website built with **HTML**, **CSS**, and **JavaScript**.  
-It showcases my profile, skills, projects, certificates, experience, resume, and contact details in a clean and professional way.
+A responsive personal portfolio website built with **HTML**, **CSS**, and **JavaScript**.
+It presents my profile, projects, certificates, internship experience, resume, and contact details in a clean and simple layout.
 
 ## Live Demo
 
@@ -10,17 +10,17 @@ It showcases my profile, skills, projects, certificates, experience, resume, and
 
 ## Features
 
-- Fully responsive design for mobile, tablet, and desktop.
-- Animated hero section with typing effect.
-- Dark mode / light mode toggle.
+- Responsive design for mobile, tablet, and desktop.
+- Animated hero section with a typing text effect.
+- Dark mode / light mode toggle (saved in the browser).
 - Smooth scrolling navigation.
 - Project cards with live demo and GitHub links.
 - Project search and category filtering.
-- Custom modal for project details.
-- Animated progress bars for skills.
-- Certificates section with downloadable PDFs.
-- Resume download and view buttons.
-- Contact form with EmailJS integration.
+- Project details popup (modal).
+- Technologies section listing the tools used in the projects.
+- Certificates section with view links to PDF files.
+- Resume view and download buttons.
+- Contact form with validation and EmailJS integration.
 - Scroll progress bar and back-to-top button.
 - Custom 404 page.
 - SEO-friendly `robots.txt` and `sitemap.xml`.
@@ -30,13 +30,15 @@ It showcases my profile, skills, projects, certificates, experience, resume, and
 - HTML5
 - CSS3
 - JavaScript
-- Font Awesome
-- AOS (Animate On Scroll)
-- EmailJS
+- Font Awesome (icons)
+- AOS - Animate On Scroll (scroll animations)
+- EmailJS (contact form)
+- OpenWeather API (used in the Weather App project)
+- Git & GitHub (version control and hosting with GitHub Pages)
 
 ## Project Structure
 
-```bash
+```
 Personal-Portfolio/
 │
 ├── index.html
@@ -70,29 +72,33 @@ Personal-Portfolio/
 
 - Home
 - About
-- Skills
+- Technologies
 - Projects
 - Experience
-- GitHub Stats
+- GitHub Profile
 - Certificates
 - Contact
 
 ## Setup Instructions
 
 ### 1. Clone the repository
-```bash
+
+```
 git clone https://github.com/priyanshu01stark/Personal-Portfolio.git
 ```
 
 ### 2. Open the project
+
 - Open the folder in VS Code or any code editor.
 - Make sure the folder structure remains the same.
 
 ### 3. Run locally
+
 - Open `index.html` in your browser.
-- Or use Live Server in VS Code for better development experience.
+- Or use Live Server in VS Code for a better development experience.
 
 ### 4. Deploy on GitHub Pages
+
 - Go to your repository **Settings**.
 - Open **Pages**.
 - Select **Deploy from a branch**.
@@ -103,15 +109,15 @@ git clone https://github.com/priyanshu01stark/Personal-Portfolio.git
 ## Important Notes
 
 - Keep `index.html` in the root folder.
-- Do not rename the `css`, `js`, `images`, or `files` folders unless you also update paths in HTML.
+- Do not rename the `css`, `js`, `images`, or `files` folders unless you also update the paths in `index.html`.
 - Resume and certificate links should remain in the `files` folder.
-- Images used in cards and hero section should remain in the `images` folder.
+- Images used in project cards, certificates, and the hero section should remain in the `images` folder.
 
 ## Contact
 
 - **Name:** Priyanshu Gangwar
-- **Location:** Moradabad, Uttar Pradesh, India
-- **Email:** priyanshugangwar73@gmail.com
+- **Location:** Baheri, Bareilly, Uttar Pradesh, India
+- **Email:** [priyanshugangwar73@gmail.com](mailto:priyanshugangwar73@gmail.com)
 - **GitHub:** [priyanshu01stark](https://github.com/priyanshu01stark)
 - **LinkedIn:** [Priyanshu Gangwar](https://linkedin.com/in/priyanshugangwar73)
 
