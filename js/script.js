@@ -21,12 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectCards = document.querySelectorAll(".project-card");
   const filterBtns = document.querySelectorAll(".filter-btn");
   const revealEls = document.querySelectorAll(".reveal");
-  const progressBars = document.querySelectorAll(".progress-bar");
   const navLinks = document.querySelectorAll(".menu a");
 
-  let userName = "Priyanshu";
-  if (!userName) userName = "Guest";
-  if (welcome) welcome.textContent = `Welcome ${userName} 👋`;
+  if (welcome) welcome.textContent = "Welcome Priyanshu 👋";
 
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -72,16 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealEls.forEach(el => {
       const top = el.getBoundingClientRect().top;
       if (top < window.innerHeight - 120) el.classList.add("active");
-    });
-
-    progressBars.forEach(bar => {
-      if (!bar.dataset.width) {
-        bar.dataset.width = getComputedStyle(bar).width;
-        bar.style.width = "0%";
-      }
-      if (bar.getBoundingClientRect().top < window.innerHeight - 100) {
-        bar.style.width = bar.dataset.width;
-      }
     });
   }
 
@@ -287,8 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
     incrementCounter("projectCount", 4);
     incrementCounter("certificateCount", 4);
-    incrementCounter("skillCount", 5);
-    incrementCounter("codingCount", 150);
 
     if (window.AOS) {
       AOS.init({
